@@ -13,6 +13,7 @@ public class Main {
 
         String s = "";
 
+
         for (int i = 0; i < str.length(); i++) {
 
 
@@ -23,6 +24,10 @@ public class Main {
                 vec.add(s);
 
                 s = "";
+            }
+
+            if(i == str.length()-1){
+                vec.add(s);
             }
         }
 
