@@ -6,13 +6,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        char c = sc.next().charAt(0);
+        String s = sc.nextLine();
 
-        if(Character.isLowerCase(c)) {
-            System.out.println(Character.toUpperCase(c));
-        }
-        else{
-            System.out.println(Character.toLowerCase(c));
-        }
+        int n = s.length();
+
+        s =  s.replace(" ", "");
+
+        n -= s.length();
+
+        System.out.println(1 + n);
     }
 }
