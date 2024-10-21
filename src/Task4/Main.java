@@ -17,7 +17,7 @@ public class Main {
 
 
             if (str.charAt(i) != ' ') {
-                s = s + str.charAt(i);
+                s += str.charAt(i);
             }
             else{
                 vec.add(s);
@@ -30,7 +30,7 @@ public class Main {
         String maxx = "";
 
         for(String s1 : vec) {
-            if (s.length() > max) {
+            if (s1.length() > max) {
                 max = s1.length();
                 maxx = s1;
             }
